@@ -48,9 +48,8 @@
             this.login.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login.Location = new System.Drawing.Point(148, 39);
             this.login.Name = "login";
-            this.login.Size = new System.Drawing.Size(66, 24);
+            this.login.Size = new System.Drawing.Size(0, 24);
             this.login.TabIndex = 1;
-            this.login.Text = "label1";
             // 
             // senha
             // 
@@ -58,9 +57,8 @@
             this.senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.senha.Location = new System.Drawing.Point(148, 137);
             this.senha.Name = "senha";
-            this.senha.Size = new System.Drawing.Size(66, 24);
+            this.senha.Size = new System.Drawing.Size(0, 24);
             this.senha.TabIndex = 2;
-            this.senha.Text = "label2";
             // 
             // Pesquisar
             // 

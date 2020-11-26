@@ -19,9 +19,16 @@ namespace GerenciarSenhas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            adicionar.add(local,login,senha);
-            MessageBox.Show("Informações salvas com sucesso!");
-            this.Close();
+            if (local.TextLength<=0 || login.TextLength <= 0 || senha.TextLength <= 0)
+            {
+                MessageBox.Show("Preencha todos os campos!");
+            }
+            else
+            {
+                adicionar.add(local, login, senha);
+                MessageBox.Show("Informações salvas com sucesso!");
+                this.Close();
+            }
         }
 
         private void senha_TextChanged(object sender, EventArgs e)
