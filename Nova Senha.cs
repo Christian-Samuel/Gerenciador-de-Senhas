@@ -8,26 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace GerenciarSenhas
 {
-    public partial class Form1 : Form
+    public partial class Nova_Senha : Form
     {
-        public Form1()
+        public Nova_Senha()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Nova_Senha form2 = new Nova_Senha();
-            form2.Show();
+            adicionar.add(local,login,senha);
+            MessageBox.Show("Informações salvas com sucesso!");
+            this.Close();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void senha_TextChanged(object sender, EventArgs e)
         {
-            Pesquisar form3 = new Pesquisar();
-            form3.Show();
+
         }
     }
 }
