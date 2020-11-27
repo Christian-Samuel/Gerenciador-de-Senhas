@@ -45,23 +45,16 @@ namespace GerenciarSenhas
 		}
 
 		public static void procL(ListBox lista)
-        {
-			using (FileStream arquivo1 = new FileStream("data.loc", FileMode.Open))
-			{
-				using (BinaryReader binaryWriter1 = new BinaryReader(arquivo1))
+        { 
+				using (FileStream arquivo1 = new FileStream("data.loc", FileMode.OpenOrCreate))
 				{
-					string dadoLocal;
-
-					do
-					{
-						dadoLocal = binaryWriter1.ReadString();
-						lista.Items.Add(dadoLocal);
-
-					} while (dadoLocal!=null);
-
-				}
-				
-			}
+						using (BinaryReader binaryWriter1 = new BinaryReader(arquivo1))
+						{
+							/*string dadoLocal;
+							dadoLocal = binaryWriter1.ReadString();
+							lista.Items.Add(dadoLocal);*/
+						}
+				}	
 		}
 
 		public static void proc(int i, Control login, Control senha)

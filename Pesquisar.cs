@@ -24,8 +24,21 @@ namespace GerenciarSenhas
 
         private void locais_SelectedIndexChanged(object sender, EventArgs e)
         {
-            adicionar.proc(locais.SelectedIndex,login,senha);
-            locais.Items.Add(locais.SelectedIndex);
+                adicionar.proc(locais.SelectedIndex, login, senha);   
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult confirm = MessageBox.Show("Deseja realmente Apagar?","",MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
+
+            if (confirm.ToString().ToUpper() == "YES")
+            {
+                adicionar.remover(locais.SelectedIndex);
+                adicionar.procL(locais);
+            }
+
+
+
         }
     }
 }

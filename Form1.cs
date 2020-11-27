@@ -26,8 +26,13 @@ namespace GerenciarSenhas
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Pesquisar form3 = new Pesquisar();
-            form3.Show();
+            if (System.IO.File.Exists(@"data.loc"))
+            {
+                Pesquisar form3 = new Pesquisar();
+                form3.Show();
+            }
+            else
+            { MessageBox.Show("Nenhuma informação encontrada!"); }
         }
     }
 }
