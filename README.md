@@ -1,6 +1,12 @@
 # Gerenciador-de-Senhas
 Aplicativo criado para armazenar emails e senhas de maneira rapida e facil.
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-![TelaInicial] (https://raw.githubusercontent.com/Christian-Samuel/Gerenciador-de-Senhas/master/imgs/inicio.PNG)
-![TelaAdd] (https://raw.githubusercontent.com/Christian-Samuel/Gerenciador-de-Senhas/blob/master/imgs/Adicionar%20novo%20dado.PNG)
-![TelaPesquisa] (https://raw.githubusercontent.com/Christian-Samuel/Gerenciador-de-Senhas/master/imgs/pesquisa.PNG)
+
+
+-Tela Inicial:<br>
+![telainicial](https://github.com/Christian-Samuel/Gerenciador-de-Senhas/blob/master/imgs/inicio.PNG?raw=true)
+
+-Adicionar novos dados:<br>
+![AddDados](https://github.com/Christian-Samuel/Gerenciador-de-Senhas/blob/master/imgs/Adicionar%20novo%20dado.PNG?raw=true)
+
+-Pesquisar e apagar:<br>
+![AddDados](https://github.com/Christian-Samuel/Gerenciador-de-Senhas/blob/master/imgs/pesquisa.PNG?raw=true)
